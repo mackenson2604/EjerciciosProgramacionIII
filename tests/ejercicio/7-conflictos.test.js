@@ -5,8 +5,8 @@ const path = require('path');
 describe('Ejercicio 7: Manejo de conflictos', () => {
   const rootPath = path.join(__dirname, '../../');
   
-  test('El archivo README.md debe contener información del proyecto combinada', () => {
-    const readmePath = path.join(rootPath, 'README.md');
+  test('El archivo mi-proyecto.md debe contener información del proyecto combinada', () => {
+    const readmePath = path.join(rootPath, 'mi-proyecto.md');
     expect(fs.existsSync(readmePath)).toBe(true);
     
     const content = fs.readFileSync(readmePath, 'utf8');

@@ -5,8 +5,8 @@ const path = require('path');
 describe('Ejercicio 6: Clonar y pull de GitHub', () => {
   const rootPath = path.join(__dirname, '../../');
   
-  test('El archivo README.md debe contener la actualización desde GitHub', () => {
-    const readmePath = path.join(rootPath, 'README.md');
+  test('El archivo mi-proyecto.md debe contener la actualización desde GitHub', () => {
+    const readmePath = path.join(rootPath, 'mi-proyecto.md');
     expect(fs.existsSync(readmePath)).toBe(true);
     
     const content = fs.readFileSync(readmePath, 'utf8');

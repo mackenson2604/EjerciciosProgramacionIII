@@ -10,7 +10,7 @@ Aprender a resolver conflictos que pueden ocurrir cuando múltiples personas tra
    git checkout -b feature/conflicto-simulado
    ```
 
-2. Modifica el archivo `README.md` añadiendo al final:
+2. Modifica el archivo `mi-proyecto.md` añadiendo al final:
    ```
    ## Información del proyecto
    Versión desarrollada en rama feature
@@ -18,7 +18,7 @@ Aprender a resolver conflictos que pueden ocurrir cuando múltiples personas tra
 
 3. Haz commit de estos cambios:
    ```bash
-   git add README.md
+   git add mi-proyecto.md
    git commit -m "Añadir información en rama feature"
    ```
 
@@ -27,7 +27,7 @@ Aprender a resolver conflictos que pueden ocurrir cuando múltiples personas tra
    git checkout main
    ```
 
-5. Modifica la misma sección del `README.md` añadiendo al final:
+5. Modifica la misma sección del `mi-proyecto.md` añadiendo al final:
    ```
    ## Información del proyecto
    Versión desarrollada en rama main
@@ -35,7 +35,7 @@ Aprender a resolver conflictos que pueden ocurrir cuando múltiples personas tra
 
 6. Haz commit de estos cambios:
    ```bash
-   git add README.md
+   git add mi-proyecto.md
    git commit -m "Añadir información en rama main"
    ```
 
@@ -47,10 +47,10 @@ Aprender a resolver conflictos que pueden ocurrir cuando múltiples personas tra
 8. Verifica el estado y los archivos con conflicto:
    ```bash
    git status
-   cat README.md
+   cat mi-proyecto.md
    ```
 
-9. Resuelve el conflicto editando el archivo `README.md` manualmente:
+9. Resuelve el conflicto editando el archivo `mi-proyecto.md` manualmente:
    - Elimina las marcas de conflicto (`<<<<<<<`, `=======`, `>>>>>>>`)
    - Decide qué contenido mantener o combinar ambas versiones
    - El resultado final podría ser:
@@ -61,7 +61,7 @@ Aprender a resolver conflictos que pueden ocurrir cuando múltiples personas tra
 
 10. Marca el conflicto como resuelto y completa el merge:
     ```bash
-    git add README.md
+    git add mi-proyecto.md
     git commit -m "Resolver conflicto de merge"
     ```
 

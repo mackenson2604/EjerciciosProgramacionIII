@@ -5,8 +5,8 @@ const path = require('path');
 describe('Ejercicio 3: Modificar archivos y commits adicionales', () => {
   const rootPath = path.join(__dirname, '../../');
   
-  test('El archivo README.md debe contener las características añadidas', () => {
-    const readmePath = path.join(rootPath, 'README.md');
+  test('El archivo mi-proyecto.md debe contener las características añadidas', () => {
+    const readmePath = path.join(rootPath, 'mi-proyecto.md');
     expect(fs.existsSync(readmePath)).toBe(true);
     
     const content = fs.readFileSync(readmePath, 'utf8');
@@ -64,7 +64,7 @@ describe('Ejercicio 3: Modificar archivos y commits adicionales', () => {
       fail('No se pudo obtener los archivos trackeados por Git.');
     }
     
-    expect(trackedFiles).toContain('README.md');
+    expect(trackedFiles).toContain('mi-proyecto.md');
     expect(trackedFiles).toContain('CHANGELOG.md');
   });
 });

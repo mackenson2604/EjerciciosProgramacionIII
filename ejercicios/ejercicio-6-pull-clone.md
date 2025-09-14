@@ -7,12 +7,12 @@ Aprender a clonar repositorios de GitHub y mantener tu repositorio local actuali
 
 1. Simula cambios en GitHub editando un archivo directamente en la interfaz web:
    - Ve a tu repositorio en GitHub
-   - Edita el archivo `README.md` añadiendo una nueva línea:
+   - Edita el archivo `mi-proyecto.md` añadiendo una nueva línea:
      ```
      ## Última actualización
      Editado desde GitHub web interface
      ```
-   - Haz commit directamente en GitHub con el mensaje "Actualizar README desde GitHub"
+   - Haz commit directamente en GitHub con el mensaje "Actualizar mi-proyecto desde GitHub"
 
 2. En tu repositorio local, verifica el estado:
    ```bash
@@ -28,7 +28,7 @@ Aprender a clonar repositorios de GitHub y mantener tu repositorio local actuali
 
 4. Verifica que los cambios se descargaron:
    ```bash
-   cat README.md
+   cat mi-proyecto.md
    ```
 
 5. Crea un archivo llamado `sync-test.txt` con cualquier contenido:

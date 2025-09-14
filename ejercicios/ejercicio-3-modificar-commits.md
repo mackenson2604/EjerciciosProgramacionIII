@@ -5,7 +5,7 @@ Aprender a modificar archivos existentes, ver las diferencias y crear commits ad
 
 ## Instrucciones
 
-1. Modifica el archivo `README.md` añadiendo una nueva línea al final:
+1. Modifica el archivo `mi-proyecto.md` añadiendo una nueva línea al final:
    ```
    ## Características
    - Aprendiendo Git paso a paso
@@ -29,14 +29,14 @@ Aprender a modificar archivos existentes, ver las diferencias y crear commits ad
    git status
    ```
 
-5. Añade solo el archivo README.md al staging:
+5. Añade solo el archivo mi-proyecto.md al staging:
    ```bash
-   git add README.md
+   git add mi-proyecto.md
    ```
 
-6. Haz un commit solo del README:
+6. Haz un commit solo del mi-proyecto:
    ```bash
-   git commit -m "Actualizar README con características"
+   git commit -m "Actualizar mi-proyecto con características"
    ```
 
 7. Añade el archivo CHANGELOG.md:
