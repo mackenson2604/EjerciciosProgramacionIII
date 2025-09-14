@@ -5,7 +5,7 @@ Aprender a crear archivos, añadirlos al área de staging y hacer tu primer comm
 
 ## Instrucciones
 
-1. Crea un archivo llamado `README.md` en la raíz del proyecto con el siguiente contenido:
+1. Crea un archivo llamado `mi-proyecto.md` en la raíz del proyecto con el siguiente contenido:
    ```
    # Mi Proyecto Git
    
@@ -33,7 +33,7 @@ Aprender a crear archivos, añadirlos al área de staging y hacer tu primer comm
 
 7. Haz tu primer commit:
    ```bash
-   git commit -m "Primer commit: añadir README y documentación inicial"
+   git commit -m "Primer commit: añadir mi-proyecto.md y documentación inicial"
    ```
 
 8. Verifica el historial de commits:

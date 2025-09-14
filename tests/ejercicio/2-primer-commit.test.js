@@ -5,11 +5,11 @@ const path = require('path');
 describe('Ejercicio 2: Crear archivos y hacer primer commit', () => {
   const rootPath = path.join(__dirname, '../../');
   
-  test('El archivo README.md debe existir con el contenido correcto', () => {
-    const readmePath = path.join(rootPath, 'README.md');
-    expect(fs.existsSync(readmePath)).toBe(true);
+  test('El archivo mi-proyecto.md debe existir con el contenido correcto', () => {
+    const miProyectoPath = path.join(rootPath, 'mi-proyecto.md');
+    expect(fs.existsSync(miProyectoPath)).toBe(true);
     
-    const content = fs.readFileSync(readmePath, 'utf8');
+    const content = fs.readFileSync(miProyectoPath, 'utf8');
     expect(content).toContain('# Mi Proyecto Git');
     expect(content).toContain('Este es mi primer proyecto usando Git');
   });
@@ -52,7 +52,7 @@ describe('Ejercicio 2: Crear archivos y hacer primer commit', () => {
       fail('No se pudo obtener los archivos del último commit.');
     }
     
-    expect(filesInCommit).toContain('README.md');
+    expect(filesInCommit).toContain('mi-proyecto.md');
     expect(filesInCommit).toContain('docs');
   });
 });
