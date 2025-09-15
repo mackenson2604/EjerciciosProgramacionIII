@@ -1,74 +1,374 @@
 {
     "tests": [
         {
-            "name": "Ejercicio 1: Inicializar Git",
+            "name": "Ejercicio 1.1: Git inicializado",
             "setup": "npm install",
-            "run": "npm test ejercicio/1",
+            "run": "npm test -- --testNamePattern=\"El repositorio Git debe estar inicializado\"",
             "input": "",
             "output": "",
             "comparison": "included",
             "timeout": 10,
-            "points": 0.1
+            "points": 0.033
         },
         {
-            "name": "Ejercicio 2: Primer Commit",
+            "name": "Ejercicio 1.2: Configuración de usuario",
             "setup": "",
-            "run": "npm test ejercicio/2",
+            "run": "npm test -- --testNamePattern=\"La configuración de usuario debe estar establecida\"",
             "input": "",
             "output": "",
             "comparison": "included",
             "timeout": 10,
-            "points": 0.15
+            "points": 0.033
         },
         {
-            "name": "Ejercicio 3: Modificar y Commits",
+            "name": "Ejercicio 1.3: Git status funcional",
             "setup": "",
-            "run": "npm test ejercicio/3",
+            "run": "npm test -- --testNamePattern=\"El comando git status debe funcionar correctamente\"",
             "input": "",
             "output": "",
             "comparison": "included",
             "timeout": 10,
-            "points": 0.15
+            "points": 0.034
         },
         {
-            "name": "Ejercicio 4: Trabajar con Ramas",
+            "name": "Ejercicio 2.1: Archivo mi-proyecto.md creado",
             "setup": "",
-            "run": "npm test ejercicio/4",
+            "run": "npm test -- --testNamePattern=\"El archivo mi-proyecto.md debe existir con el contenido correcto\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 2.2: Archivo README.md creado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo README.md debe contener información del proyecto\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 2.3: Primer commit realizado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe tener al menos 1 commit\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 2.4: Commit con mensaje descriptivo",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El commit debe tener un mensaje descriptivo\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 2.5: Archivos trackeados",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Los archivos deben estar trackeados en Git\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 3.1: mi-proyecto.md modificado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo mi-proyecto.md debe contener las características añadidas\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 3.2: CHANGELOG.md creado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo CHANGELOG.md debe existir con el contenido correcto\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 3.3: Múltiples commits",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe tener al menos 3 commits\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 3.4: Mensajes de commit descriptivos",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Los commits deben tener mensajes descriptivos\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 3.5: Archivos trackeados correctamente",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Los archivos deben estar trackeados en Git\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.03
+        },
+        {
+            "name": "Ejercicio 4.1: features.txt creado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo features.txt debe existir con el contenido correcto\"",
             "input": "",
             "output": "",
             "comparison": "included",
             "timeout": 15,
-            "points": 0.2
+            "points": 0.033
         },
         {
-            "name": "Ejercicio 5: GitHub y Push",
+            "name": "Ejercicio 4.2: En rama main",
             "setup": "",
-            "run": "npm test ejercicio/5",
+            "run": "npm test -- --testNamePattern=\"Debe estar en la rama main\"",
             "input": "",
             "output": "",
             "comparison": "included",
             "timeout": 15,
-            "points": 0.2
+            "points": 0.033
         },
         {
-            "name": "Ejercicio 6: Pull y Clone",
+            "name": "Ejercicio 4.3: Rama temporal eliminada",
             "setup": "",
-            "run": "npm test ejercicio/6",
+            "run": "npm test -- --testNamePattern=\"La rama feature/nueva-funcionalidad no debe existir\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.034
+        },
+        {
+            "name": "Ejercicio 4.4: Commits adicionales por ramas",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe tener commits adicionales por el trabajo con ramas\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.033
+        },
+        {
+            "name": "Ejercicio 4.5: features.txt trackeado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo features.txt debe estar trackeado en Git\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.033
+        },
+        {
+            "name": "Ejercicio 4.6: Evidencia de merge",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe haber evidencia de merge en el historial\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.034
+        },
+        {
+            "name": "Ejercicio 5.1: Repositorio remoto configurado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El repositorio debe tener un remote origin configurado\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.04
+        },
+        {
+            "name": "Ejercicio 5.2: Rama main sincronizada",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"La rama main debe estar sincronizada con origin\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.04
+        },
+        {
+            "name": "Ejercicio 5.3: Commits pusheados",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Los commits deben estar pusheados al repositorio remoto\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.04
+        },
+        {
+            "name": "Ejercicio 5.4: README actualizado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo README.md debe estar actualizado con información de GitHub\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.04
+        },
+        {
+            "name": "Ejercicio 5.5: Configuración remota correcta",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El remote origin debe apuntar a un repositorio de GitHub válido\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.04
+        },
+        {
+            "name": "Ejercicio 6.1: colaboradores.md existe",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo colaboradores.md debe existir\"",
             "input": "",
             "output": "",
             "comparison": "included",
             "timeout": 10,
-            "points": 0.1
+            "points": 0.017
         },
         {
-            "name": "Ejercicio 7: Manejo de Conflictos",
+            "name": "Ejercicio 6.2: colaboradores.md tiene contenido",
             "setup": "",
-            "run": "npm test ejercicio/7",
+            "run": "npm test -- --testNamePattern=\"El archivo colaboradores.md debe tener el contenido correcto\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.017
+        },
+        {
+            "name": "Ejercicio 6.3: cambios-remotos.md existe",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo cambios-remotos.md debe existir\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.016
+        },
+        {
+            "name": "Ejercicio 6.4: cambios-remotos.md tiene contenido",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo cambios-remotos.md debe tener contenido simulando cambios remotos\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.017
+        },
+        {
+            "name": "Ejercicio 6.5: commits adicionales por pull",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe tener commits adicionales por el trabajo con pull\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.017
+        },
+        {
+            "name": "Ejercicio 6.6: archivos trackeados",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Los archivos nuevos deben estar trackeados en Git\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 10,
+            "points": 0.016
+        },
+        {
+            "name": "Ejercicio 7.1: mi-proyecto.md combinado",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El archivo mi-proyecto.md debe contener información del proyecto combinada\"",
             "input": "",
             "output": "",
             "comparison": "included",
             "timeout": 15,
-            "points": 0.1
+            "points": 0.014
+        },
+        {
+            "name": "Ejercicio 7.2: rama conflicto eliminada",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"No debe existir la rama feature/conflicto-simulado\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.014
+        },
+        {
+            "name": "Ejercicio 7.3: en rama main",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe estar en la rama main/master\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.015
+        },
+        {
+            "name": "Ejercicio 7.4: evidencia de merge",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe tener evidencia de merge en el historial\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.014
+        },
+        {
+            "name": "Ejercicio 7.5: commits de conflictos",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe tener commits relacionados con conflictos\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.014
+        },
+        {
+            "name": "Ejercicio 7.6: repositorio limpio",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"El repositorio debe estar limpio\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.015
+        },
+        {
+            "name": "Ejercicio 7.7: número adecuado de commits",
+            "setup": "",
+            "run": "npm test -- --testNamePattern=\"Debe tener un número adecuado de commits\"",
+            "input": "",
+            "output": "",
+            "comparison": "included",
+            "timeout": 15,
+            "points": 0.014
         }
     ]
 }
