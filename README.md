@@ -106,23 +106,6 @@ npm run test:coverage
 ├── jest.config.js        # Configuración de Jest
 └── README.md            # Este archivo
 ```
-
-## 🏆 Sistema de Evaluación
-
-- **Básicos (1-2)**: 25% → 0.25 puntos
-- **Intermedios (3-4)**: 35% → 0.35 puntos  
-- **Avanzados (5-7)**: 40% → 0.4 puntos
----
-
-### Los Tests deben paser correctamente:
-
-- **Ejercicio 1**: `npm test ejercicio/1` (0.1 puntos)
-- **Ejercicio 2**: `npm test ejercicio/2` (0.15 puntos)  
-- **Ejercicio 3**: `npm test ejercicio/3` (0.15 puntos)
-- **Ejercicio 4**: `npm test ejercicio/4` (0.2 puntos)
-- **Ejercicio 5**: `npm test ejercicio/5` (0.2 puntos)
-- **Ejercicio 6**: `npm test ejercicio/6` (0.1 puntos)
-- **Ejercicio 7**: `npm test ejercicio/7` (0.1 puntos)
 ---
 
 **Total**: 1.0 punto
@@ -138,21 +121,6 @@ Cada ejercicio es evaluado automáticamente en base a:
 - **Configuración correcta**
 - **Sincronización con GitHub**
 
-## 🎓 Interpretación de Calificaciones
-
-- **0.9 - 1.0**: Excelente (90-100%)
-- **0.8 - 0.89**: Muy bueno (80-89%)
-- **0.7 - 0.79**: Bueno (70-79%)
-- **0.6 - 0.69**: Satisfactorio (60-69%)
-- **< 0.6**: Necesita mejora (< 60%)
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Revisa los [criterios de evaluación](#criterios-de-evaluacion).
-2. Realiza tus cambios y Commit tus cambios (`git commit -m 'Añadir nueva característica'`)
-3. Push
 ---
 
 **¡Feliz aprendizaje con Git! 🎉**
