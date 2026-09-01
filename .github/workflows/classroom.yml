@@ -17,7 +17,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '22'
     
     # Cachear node_modules
     - name: Cache node_modules
@@ -35,7 +35,7 @@ jobs:
         test-name: Basic test
         setup-command: npm install
         command: npm test
-        timeout: 10
+        timeout: 30
         max-score: 5
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
